@@ -1,0 +1,23 @@
+<h2>Meet our Animals: </h2>
+<ul class="animals">
+    <li *ngFor = "let animal of animals">
+        <button type="button" (click) = "onSelect(animal)">
+            <span class="badge">{{animal.id}}. </span>
+            <span class="name">{{animal.name}}</span>
+        </button>
+    </li>
+</ul>
+
+<div *ngIf="selectedAnimal">
+    <h2>{{selectedAnimal.name | uppercase }}'s Info</h2>
+    <div>id: {{selectedAnimal.id}}</div>
+    <div>
+        <label for="animal-name">Animal Name: </label>
+        <input id="animal-name" [(ngModel)]="selectedAnimal.name" placeholder=" Rename?" />
+    </div>
+</div>
+
+<!-- <div>
+    <label for="name">Animal Name: </label>
+    <input id="name" [(ngModel)]="animal.name" placeholder=" Rename?" />
+</div> -->
