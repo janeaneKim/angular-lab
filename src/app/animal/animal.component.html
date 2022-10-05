@@ -10,9 +10,11 @@
 
 <div *ngIf="selectedAnimal">
     <h2>{{selectedAnimal.name | uppercase }}'s Info</h2>
-    <div>id: {{selectedAnimal.id}}</div>
+    <div>Id: {{selectedAnimal.id}}</div>
+    <div>Status: {{selectedAnimal.status}}</div>
+
     <div>
-        <label for="animal-name">Animal Name: </label>
+        <label for="animal-name">Name: </label>
         <input id="animal-name" [(ngModel)]="selectedAnimal.name" placeholder=" Rename?" />
     </div>
 </div>

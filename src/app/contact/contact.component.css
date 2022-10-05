@@ -1,0 +1,24 @@
+form {
+    background-color: rgb(240, 193, 226);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button {
+    max-width:400px;
+}
+
+input, textarea{
+    border-radius: 10px;
+    background-color: azure;
+}
+
+
+
